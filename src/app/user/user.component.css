@@ -1,0 +1,28 @@
+
+.user-img-container{
+    overflow:hidden;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+}
+.user-img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+a{
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+.text-whatsapp-color{
+    color:var(--whatsapp-color);
+}
+.text-phone-color{
+    color:var(--phone-color);
+}
+.text-mail-color{
+    color:var(--mail-color);
+}

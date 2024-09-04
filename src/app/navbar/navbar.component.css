@@ -1,0 +1,17 @@
+nav{
+    --bg-nav : #f5f5f5;
+    background-color: var(--bg-nav);
+}
+.img{
+    max-height:30px;
+    max-width:30px;
+    margin: 0 auto;
+
+}
+.logo-text{
+    font-size:10px;
+}
+.subnav-2{
+    
+    max-height:20px;
+}

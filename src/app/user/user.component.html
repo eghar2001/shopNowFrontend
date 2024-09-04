@@ -1,0 +1,22 @@
+<div class="container d-flex flex-column align-items-center p-3 border border-2 bg-blue text-white" >
+    <div class="row  user-img-container border border-3 border-dark rounded-circle w-100 mb-3">
+        <img src="user-icon.png" class="user-img bg-white " alt="">
+    </div>
+    <h2 class="row">{{nombreYApellido}}</h2>
+    <p class="fs-5 text-gray row">{{'@'}}{{username}}</p>
+    <div class="w-90 row  h-100 d-flex bg-white rounded flex-row justify-content-between text-center align-items-center p-2">
+            <a class="col-4 " [href]="whatsappLink" target="_blank">
+                <i class='text-whatsapp-color bx  bxl-whatsapp bx-lg'></i>
+                <span>WhatsApp</span>
+            </a>
+            <a class="col-4 " [href]="callLink" target="_blank">
+                <i class='  text-phone-color bx bx-phone bx-lg'></i>
+                <span>Llamar</span>
+            </a>
+            <a class="col-4 " [href]="mailLink" target="_blank"> 
+                <i class='bx  bx-envelope bx-lg'></i>
+                <span>Mail</span>
+            </a>
+    </div>
+
+</div>

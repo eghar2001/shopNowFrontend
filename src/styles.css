@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+    --white-color: #ebebeb;
+    --blue-color:#0c3071;
+    --gray-color:#c4c4c4;
+
+
+    
+    --whatsapp-color:#25d366;
+    --phone-color:#253964;
+    --mail-color:#8e3939;
+}
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration:none;
+    color:black;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color:var(--white-color);
+}
+a{
+    text-decoration:none;
+    
+}
+.bg-white{
+    background-color: var(--white-color);
+}
+.bg-blue{
+    background-color: var(--blue-color);
+}
+.text-blue{
+    color:var(--blue-color);
+}
+.text-gray{
+    color:var(--gray-color);
+}
+.text-white{
+    color:var(--white-color);
+}
+.w-90{
+    width:90%;
+}
+.w-80{
+    width: 90%;
+}
+.w-20{
+    width: 20%;
+}
+.w-15{
+    width: 15%;
+}
+
+.fs-7{
+    font-size:15px;
+}
+.fs-8{
+    font-size:10px;
+}
+
+.valign-center{
+    vertical-align: center;
+}
