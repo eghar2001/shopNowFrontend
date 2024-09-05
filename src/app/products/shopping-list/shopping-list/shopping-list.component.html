@@ -1,0 +1,22 @@
+
+<!-- Lista de compras desplegable -->
+  <div *ngFor="let item of shoppingList; let i = index" class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <!-- Componente reutilizable de ProductCard -->
+        <app-product-card [product]="item.product"></app-product-card>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <!-- Control de cantidad -->
+          <div class="quantity-control">
+            <button (click)="decrementQuantity(i)" class="btn btn-outline-secondary">-</button>
+            <p class="card-text mb-0">Cantidad: {{ item.quantity }}</p>
+            <button (click)="incrementQuantity(i)" class="btn btn-outline-secondary">+</button>
+          </div>
+          <button (click)="removeProduct(i)" class="btn btn-danger mt-2">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<

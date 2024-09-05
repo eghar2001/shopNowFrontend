@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="subnav-2 d-flex flex-row justify-content-between align-items-center p-3 bg-blue ">
-        <div ckass="">
+        <div class="">
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class='bx bx-menu bx-sm text-white' ></i>
             </button>
@@ -33,11 +33,23 @@
         <div class="d-flex align-items-center">
             <a class="fs-7 m-auto h-100 valign-center text-white">Dean Funes 510 (Rosario, Santa Fe)</a>
         </div>
+        <!-- Carrito de compras -->
         <div>
-            <a><i class='bx bx-cart bx-sm text-white'></i></a>
+            <a (click)="toggleShoppingList()" >
+                <i class='bx bx-cart bx-sm text-white'></i>
+                
+            </a>
         </div>
     </div>
 </nav>
+
+
+<!-- Componente Shopping-List -->
+<div *ngIf="isShoppingListExpanded" class="ShoppingListExpanded">
+    <app-shopping-list></app-shopping-list>
+</div>
+
+
 <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
     <div class="bg-dark p-4">
       <h5 class="text-body-emphasis h4">Collapsed content</h5>
