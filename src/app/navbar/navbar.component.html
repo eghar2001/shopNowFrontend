@@ -43,17 +43,24 @@
     </div>
 </nav>
 
+<!-- Menú expandible -->
+<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+    <div class="bg-dark p-4">
+        <h5 class="text-body-emphasis h4">Menú</h5>
+
+        <!-- Sección Mis Compras -->
+        <div class="mt-3">
+            <a href="/mis-compras" class="text-white text-decoration-none">
+                <i class="bx bx-shopping-bag"></i> Mis Compras
+            </a>
+        </div>
+    </div>
+</div>
+
 
 <!-- Componente Shopping-List -->
 <div *ngIf="isShoppingListExpanded" class="ShoppingListExpanded ">  
     <app-shopping-list></app-shopping-list>
 </div>
 
-
-<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-    <div class="bg-dark p-4">
-      <h5 class="text-body-emphasis h4">Collapsed content</h5>
-      <span class="text-body-secondary">Toggleable via the navbar brand.</span>
-    </div>
-</div>
   

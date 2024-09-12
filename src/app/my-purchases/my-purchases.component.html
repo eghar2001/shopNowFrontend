@@ -1,0 +1,25 @@
+<div *ngIf="purchaseHistory.length > 0; else noPurchases">
+  <h3 class="my-3">Mi Historial de Compras</h3>
+
+  <!-- Contenedor con scroll para la lista de compras -->
+  <div class="purchase-list-container">
+    <div *ngFor="let product of purchaseHistory" class="purchase-item card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img [src]="product.imagen" alt="{{product.title}}" class="img-fluid rounded-start">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.title }}</h5>
+            <p class="card-text">Precio: {{ product.price }}</p>
+            <p class="card-text"><small class="text-muted">Comprado el {{ '2024-08-15' }}</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #noPurchases>
+  <p>No tienes compras en tu historial.</p>
+</ng-template>
