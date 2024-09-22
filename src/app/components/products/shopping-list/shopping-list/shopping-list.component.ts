@@ -2,8 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ProductCardComponent } from '../../product-card/product-card/product-card.component.js';
-import { ShoppingListItem } from '../../../interfaces/ShoppingListItem.js';
-import { Product } from '../../../interfaces/Product.js';
+import { ShoppingListItem } from '../../../../interfaces/ShoppingListItem.js';
+import { Product } from '../../../../interfaces/Product.js';
 
 @Component({
   selector: 'app-shopping-list',
@@ -38,7 +38,7 @@ export class ShoppingListComponent{
           price: 3.50,
           imagen: 'https://via.placeholder.com/150?text=Manzanas'
         },
-        quantity: 5 
+        quantity: 5
       },
       {
         product: {
@@ -52,7 +52,7 @@ export class ShoppingListComponent{
 
       ];
     }
-  
+
 /* MÉTODOS*/
       toggleShoppingList(){
         this.isShoppingListVisible = !this.isShoppingListVisible;
@@ -69,20 +69,20 @@ export class ShoppingListComponent{
       }
 
       generateId(): number {
-      return this.shoppingList.length > 0 
-        ? Math.max(...this.shoppingList.map(item => item.product.id)) + 1 
+      return this.shoppingList.length > 0
+        ? Math.max(...this.shoppingList.map(item => item.product.id)) + 1
         : 1;
-      } 
+      }
 
       addProduct(){
         const newItem: ShoppingListItem = {
           product: {...this.newProduct, id: this.generateId()}, //Genero ID único      /*ESTA MAL , TOMAR ID DEL PRODUCTO EXISTENTE */
             quantity: this.newQuantity
-          }; 
+          };
           this.shoppingList.push(newItem);
           this.resetForm();
         }
-      
+
 
       removeProduct(index: number) {
       this.shoppingList.splice(index, 1);
@@ -98,6 +98,6 @@ export class ShoppingListComponent{
         this.newQuantity = 1;
       }
 
-      
+
 
 }

@@ -1,0 +1,8 @@
+<div class="position-relative">
+  <div class="flash-container">
+    <app-flash *ngFor="let flash of flashService.flashList()" [message]="flash.message" [type]="flash.type" ></app-flash>
+
+  </div>
+</div>
+
+

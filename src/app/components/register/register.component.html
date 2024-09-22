@@ -1,0 +1,48 @@
+<form class="container-fluid bg-white p-3 text-center" [formGroup]="registerForm" (ngSubmit)="onSubmit()" >
+  <div class="mb-4 row d-flex justify-content-center align-items-center">
+    <img class="logo-img me-2" src="icon.png" alt="" srcset="">
+    <h1 class="border-1 border-bottom align-self-end fs-1 text-blue logo-text">Register</h1>
+  </div>
+
+  <div class=" form-floating mb-3 ">
+
+    <input type="text" class="form-control" id="nombre" formControlName="nombre" aria-describedby="textHelp">
+    <label for="nombre" class="form-label text-blue" >Nombre</label>
+  </div>
+  <div class=" form-floating mb-3 ">
+
+    <input type="text" class="form-control" id="apellido" formControlName="apellido" aria-describedby="textHelp">
+    <label for="apellido" class="form-label text-blue" >Apellido</label>
+  </div>
+  <div class=" form-floating mb-3 ">
+
+    <input type="text" class="form-control" id="telefono" formControlName="telefono" aria-describedby="textHelp">
+    <label for="telefono" class="form-label text-blue" >Telefono</label>
+  </div>
+  <div class=" form-floating mb-3 ">
+
+    <input type="date" class="form-control" id="fechaNacimiento" formControlName="fechaNacimiento" aria-describedby="textHelp">
+    <label for="fechaNacimiento" class="form-label text-blue" >Fecha Nacimiento</label>
+  </div>
+  <div class=" form-floating mb-3 ">
+
+    <input type="text" class="form-control" id="username" formControlName="username" aria-describedby="textHelp">
+    <label for="username" class="form-label text-blue" >Username</label>
+  </div>
+
+
+
+  <div class=" form-floating mb-3 ">
+
+    <input type="email" class="form-control" id="email" formControlName="email" aria-describedby="emailHelp">
+    <label for="email" class="form-label text-blue" >Email</label>
+  </div>
+  <div class="form-floating mb-3">
+
+    <input type="password" class="form-control" formControlName="password" id="password">
+    <label for="password" class="form-label" >Contraseña</label>
+  </div>
+
+  <button type="submit" class="btn btn-gray">Register</button>
+</form>
+

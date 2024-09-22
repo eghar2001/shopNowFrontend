@@ -4,9 +4,12 @@
     --white-color: #ebebeb;
     --blue-color:#0c3071;
     --gray-color:#c4c4c4;
+    --strong-gray-color:#919191;
+
+    --black-color: #191b1d;
 
 
-    
+
     --whatsapp-color:#25d366;
     --phone-color:#253964;
     --mail-color:#8e3939;
@@ -24,14 +27,22 @@ body{
 }
 a{
     text-decoration:none;
-    
+
 }
+
+/* colores de fondo */
 .bg-white{
     background-color: var(--white-color);
 }
 .bg-blue{
     background-color: var(--blue-color);
 }
+.bg-gray{
+    background-color: var(--gray-color);
+}
+
+
+/* COLORES DE TEXTO */
 .text-blue{
     color:var(--blue-color);
 }
@@ -41,6 +52,26 @@ a{
 .text-white{
     color:var(--white-color);
 }
+.text-black{
+    color:var(--black-color);
+}
+
+/* BOTONES */
+.btn-gray{
+  background-color:var(--gray-color);
+  color:var(--blue-color);
+}
+.btn-gray:hover{
+  background-color: var(--strong-gray-color);
+  color:var(--blue-color);
+}
+.btn-gray:active{
+  background-color: var(--strong-gray-color) !important;
+  color: var(--white-color) !important;
+}
+
+
+/* anchos */
 .w-90{
     width:90%;
 }
@@ -54,6 +85,8 @@ a{
     width: 15%;
 }
 
+
+/* FONT SIZES*/
 .fs-7{
     font-size:15px;
 }
@@ -61,6 +94,20 @@ a{
     font-size:10px;
 }
 
+
+
+/*Logo en formularioss*/
+.logo-img{
+  max-width:70px;
+}
+
 .valign-center{
     vertical-align: center;
+}
+
+.form-check-input:checked{
+    background-color: var(--blue-color);
+}
+.logo-text{
+    font-family:'Courier New', Courier, monospace;
 }

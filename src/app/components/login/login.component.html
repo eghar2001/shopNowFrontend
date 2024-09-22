@@ -1,0 +1,19 @@
+<form class="container-fluid bg-white p-3 text-center" [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+    <div class="mb-4 row d-flex justify-content-center align-items-center">
+      <img class="logo-img me-2" src="icon.png" alt="" srcset="">
+      <h1 class="border-1 border-bottom align-self-end fs-1 text-blue logo-text">Login</h1>
+    </div>
+    <div class=" form-floating mb-3 ">
+
+      <input type="email" class="form-control" id="email" formControlName="email" aria-describedby="emailHelp">
+      <label for="email" class="form-label text-blue" >Email</label>
+    </div>
+    <div class="form-floating mb-3">
+
+      <input type="password" class="form-control" formControlName="password" id="password">
+      <label for="password" class="form-label" >Contraseña</label>
+    </div>
+
+    <button type="submit" class="btn btn-gray">Login</button>
+  </form>
+
